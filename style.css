@@ -165,7 +165,6 @@ p, a, li {
 }
 .page__hero-title {
   margin-top: 20rem;
-  background-color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
   color: var(--color-light);
 }
