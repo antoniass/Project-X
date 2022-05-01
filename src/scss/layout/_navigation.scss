@@ -1,0 +1,21 @@
+.menu__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.menu__list::before {
+    content: '';
+    height: 1px;
+    width: 130px;
+    background-color: var(--color-light);
+    align-self: center;
+    margin-left: 3rem;
+}
+

@@ -1,0 +1,53 @@
+@use '../tools/variables';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-serif);
+    font-size: var(--font-size-1);
+    color: var(--color-dark);
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.container {
+    display: grid;
+    grid-auto-rows: minmax(100px, auto); /*temp*/
+}
+
+.button {
+    font-family: var(--font-sans);
+    border-style: none;
+    margin: var(--section-gap-inner) 1rem 0;
+    width: 10rem;
+    height: 4rem;
+    background-color: var(--color-accent);
+    border-radius: 1px;
+    box-shadow: 0 2px 2px 0 var(--color-dark), 0 1px 6px 2px var(--color-dark);
+
+    
+    a {
+        text-decoration: none;
+        font-size: var(--font-size-1);
+        font-weight: 500;
+        font-family: var(--font-sans);
+        color: var(--color-light);
+    }
+    
+    & + .button {
+        background-color: var(--color-light);
+        border: 1px solid var(--color-accent);
+    
+        a {
+            color: var(--color-accent);
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.header {
+    background-color: black;
+    display: grid;
+    grid-template-columns: var(--grid-container);
+    height: var(--menu-height);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.5s;
+
+    &__inner {
+        grid-column: inner;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__logo {
+        width: 23rem;
+    }
+
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: var(--grid-container);
+    min-height: calc(100vh + var(--section-gap-inner));
+    background-image: url('/assets/images/photo-hero1-bg.jpg');
+
+    &__inner {
+        grid-column: inner;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    
+}
+
+/* About us */
+
+.page__hero {
+
+    display: grid;
+    grid-template-columns: var(--grid-container);
+    min-height: calc(100vh + var(--section-gap-inner));
+    background-image: url('/assets/images/photo-bg-hero.jpg');
+    background-repeat: no-repeat;
+    
+    &-inner {
+        grid-column: 1 / 13;
+
+    }
+    
+    &-content {
+        text-align: center;
+    }
+    
+    &-title {
+        margin-top: 20rem;
+        background-color: rgba(255, 255, 255, 0.5);
+        text-transform: uppercase;
+        color: var(--color-light);
+    }
+    
+    
+}
+
+
+
+
+

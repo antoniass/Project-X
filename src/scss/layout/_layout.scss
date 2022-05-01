@@ -1,0 +1,209 @@
+.promo, .contact, .service, .readmore, .page__service {
+    display: grid;
+    grid-template-columns: var(--grid-container);
+    background-color: var(--color-light);
+
+    &__inner, 
+    &-inner {
+        grid-column: inner;
+        display: grid;
+        grid-template-columns: var(--grid-content);
+    }
+
+    &__content,
+    &-content {
+        max-width: var(--content-width);
+        margin: var(--section-gap-inner ) auto;
+        text-align: center;
+        grid-column: 1 / 13;
+    }
+
+    &__text,
+    &-text {
+        font-size: var(--font-size-2);
+    }
+    
+}
+
+.promo {
+
+    &__content {
+        margin-bottom: 0;
+
+    }
+
+    &__image {
+        width: 4rem;
+        margin: 2rem;
+    }
+}
+
+.contact {
+    color: var(--color-light);
+    background-image: url('/assets/images/photo-bg-treatment.jpg');
+    
+    & .button {
+        margin-top: var(--section-gap-inner-small);
+    }
+}
+
+.pricelist {
+    display: grid;
+    grid-template-columns: var(--grid-container);
+    height: auto;
+    padding-top: var(--section-gap-inner-small);
+    background-color: var(--color-accent);
+    text-transform: uppercase;
+    
+    
+    &__inner {
+        grid-column: inner;
+        display: grid;
+        grid-template-columns: var(--grid-content);
+        color: var(--color-light);
+    }
+    
+    &__title {
+        grid-column: 1 / 13;
+        margin-bottom: var(--section-gap-inner);
+        display: flex;
+        justify-content: center;
+    }
+
+    &__content {
+        grid-column: 1 / 13;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        &-inner:last-child {
+            border-left: 1px solid #fff;
+            padding-left: 7rem;
+            
+        }
+    }
+
+    &__list {
+        padding-left: 0;
+    }
+    
+    &__item {
+        list-style: none;
+    }
+
+    &__footer {
+        grid-column: 4 / 10;
+        text-align: center;
+        color: var(--color-light);
+
+        &-text {
+            display: flex;
+            align-items: center;
+            margin-top: var(--section-gap-inner-small);
+        }
+    }
+    
+    &__button {
+        background-color: #fff;
+        margin: var(--section-gap-inner-small) 0;
+
+        & a {
+            color: var(--color-accent);
+        }
+
+    }
+    
+}
+
+.service {
+
+    &__inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__content {
+        width: 20vw;  
+        height: auto;  
+        text-align: center;  
+        padding: 1rem;  
+        border: 1.5px solid var(--color-medium);
+    }
+    
+    &__title {
+        font-size: var(--font-size-2);
+    }
+       
+}
+
+
+/* About Us Page */
+
+.readmore {
+
+    &__link-text {
+
+        text-decoration: none;
+        text-align: center;
+        color: var(--color-dark);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: var(--section-gap-inner-small);
+        
+        & svg {
+            margin-left: 1rem;
+        }
+    }
+}
+
+.page__service {
+
+    background-image: url(/assets/images/photo-bg.jpg);
+        
+    & about-1,
+    & about-2,
+    & about-3, 
+    & about-4 {
+        margin: var(--section-gap-inner-small);
+    }
+
+    &-about{
+        text-align: left;
+    }
+            
+    &-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+        
+    &-content {
+        width: 20vw;  
+        height: auto;  
+        text-align: center;  
+        padding: 1rem;  
+        border: 1.5px solid var(--color-light);
+        background-color: rgba(255, 255, 255, 0.5);
+
+    }
+            
+    &-title {
+        grid-column: 1 / 13;
+        margin-top: var(--section-gap-inner);
+        display: flex;
+        justify-content: center;
+        background-color:rgba(255, 255, 255, 0.5);
+    }
+   
+}
+
+    
+
+
+
+
+
+
+

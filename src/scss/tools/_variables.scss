@@ -1,0 +1,49 @@
+:root {
+
+    // Fonts
+    --font-sans: 'arboria', sans-serif;
+    --font-serif: 'mr-eaves-xl-modern', serif;
+
+    //Font Base & Scale 
+    // Change here to change font-sizes
+    --font-base: 1rem;
+    --font-scale: 1.25;
+
+    --font-size-1: var(--font-base);
+    --font-size-2: calc(var(--font-size-1) * var(--font-scale)); 
+    --font-size-3: calc(var(--font-size-2) * var(--font-scale));
+    --font-size-4: calc(var(--font-size-3) * var(--font-scale));
+    --font-size-5: calc(var(--font-size-4) * var(--font-scale));
+    --font-size-6: calc(var(--font-size-5) * var(--font-scale));
+
+    // Colors 
+    --color-accent: #759F8E;
+    --color-accent-light: #97B7AA;
+    --color-accent-lighter: #BACFC7;
+    --color-light: #fff;
+    --color-medium: #666;
+    --color-dark: #333;
+
+    // Sections Gaps 
+    --section-gap: 8rem;
+    --section-gap-inner: calc(var(--section-gap) * 0.75);
+    --section-gap-inner-small: calc(var(--section-gap) * 0.5);
+
+    // Grid gap
+    --grid-gap: 3rem;
+
+    // Page settings
+    --page-width: 78rem;
+    --page-padding: 30px;
+
+    // Content Settings
+    --content-width: 55rem;
+    --content-width-small: 40rem;
+
+    // Menu settings
+    --menu-height: 100px; 
+
+    // Grids 
+    --grid-container: minmax(var(--page-padding), 1fr) [inner-start]minmax(0, var(--page-width))[inner-end] minmax(var(--page-padding), 1fr);
+    --grid-content: repeat(12, 1fr);
+}
